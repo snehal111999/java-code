@@ -1,0 +1,43 @@
+package PrecourseBeta;
+
+public class Typecasting {
+	
+	public static void main(String args[]) {
+			
+		// automatic / widening
+		short old_age = 29;// old_age stores "short" datatype
+		int new_age = old_age;// new_age is "int" datatype which is bigger
+		
+		System.out.println(old_age);
+		System.out.println(new_age);
+		
+		int salary = 10000;
+		double new_salary = salary;
+		System.out.println(salary); //10000
+		System.out.println(new_salary); //10000.0
+		
+		
+		//byte number = 5; 
+		//number *  // 50000
+		
+		
+		// narrowing / explicit
+		
+		int cash = 20000;
+		short new_cash = (short) cash;
+		System.out.println(cash);
+		System.out.println(new_cash);
+		
+		// explicit type casting
+		int money = 2000000;
+		short new_money = (short) money;
+		System.out.println(money);
+		System.out.println(new_money); //-31616 -- garbage value
+		
+		
+		float num = 20.95f;
+		int my_num = (int) num;
+		System.out.println(num); // 20.95 => 20
+		System.out.println(my_num); //20
+	}
+}
